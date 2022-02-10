@@ -20,6 +20,7 @@
 .header_icons .icon {
   padding-right: 10px;
 }
+/* 컨텐트 */
 .content {
   background: #f2f2f2;
 }
@@ -50,4 +51,35 @@
 }
 .img_text div:nth-child(3) {
   padding-right: 240px;
+}
+/* 신상품 */
+.new_product {
+  padding-top: 70px;
+  background: #fcfcfc;
+}
+.new_name {
+  display: flex;
+  justify-content: space-between;
+}
+.new_name li {
+  padding: 0 10px 0 10px;
+  list-style: none;
+  color: #000;
+}
+.new_name li div {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.product1 {
+  text-align: center;
+  height: 2000px;
+}
+.product1 button {
+  background: none;
+  border: none;
+}
+.product1 img {
+  width: 15%;
+  padding: 5px;
 }
