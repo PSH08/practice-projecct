@@ -33,9 +33,10 @@ function App() {
         </div>
       </div>
       <div className='new_product'>
+        <div className='container'>
         <ul className='new_name'>
           <li>
-            <h1>신상품</h1>
+            <h2>신상품</h2>
           </li>
           <li>
             <Link to="/"><div>전체보기</div></Link>
@@ -48,8 +49,34 @@ function App() {
           <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
           <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
           <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
-          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
           <button><FaChevronRight size={60} /></button>
+        </div>
+        </div>
+      </div>
+      <div className='product_menu'>
+        <div className='container'>
+          <div className='content1'>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/valentines_day_teaser-card-d_tcm215-845625.jpg' alt='adidas' />
+              <h5>Give Love Get Love</h5>
+              <p>발렌타인 컬렉션으로 사랑도 표현하고 10만원 바우처 기회도 잡으세요</p>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/valentines_day_teaser-card-d_tcm215-845625.jpg' alt='adidas' />
+              <h5>Give Love Get Love</h5>
+              <p>발렌타인 컬렉션으로 사랑도 표현하고 10만원 바우처 기회도 잡으세요</p>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/kids-classic-ss22-lego-launch-hp-teaser-carousel-juniors-d_tcm215-793742.jpg' alt='adidas' />
+              <h5>Imagine Your World</h5>
+              <p>놀자! 상상한 대로. 아디다스 레고⊙ 클래식과 함께</p>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/originals-ss22-blue-version-jan-launch-catlp-teaser-carousel_tcm215-818530.jpg' alt='adidas' />
+              <h5>Blue Version</h5>
+              <p>아이다스 오리지널스,그 표현의 정점을 만나다.</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
