@@ -21,7 +21,21 @@ function App() {
         </div>
       </div>
       <div className='content'>
-        <div className='cont_img'>
+        <ul className='main_content'>
+          <li>
+            <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_women_dt_tcm215-636701.jpg' alt='women' className='menu' />
+            <h3>Women</h3>
+          </li>
+          <li>
+            <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_men_dt_tcm215-636698.jpg' alt='men' className='menu' />
+            <h3>Men</h3>
+          </li>
+          <li>
+            <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_kids_dt_tcm215-636695.jpg' alt='kid' className='menu' />
+            <h3>Kids</h3>
+          </li>
+        </ul>
+        {/* <div className='cont_img'>
           <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_women_dt_tcm215-636701.jpg' alt='women' className='menu' />
           <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_men_dt_tcm215-636698.jpg' alt='men' className='menu' />
           <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_kids_dt_tcm215-636695.jpg' alt='kid' className='menu' />
@@ -30,7 +44,7 @@ function App() {
           <div>WoMen</div>
           <div>Men</div>
           <div>KiDS</div>
-        </div>
+        </div> */}
       </div>
       <div className='new_product'>
         <div className='container'>
@@ -76,6 +90,30 @@ function App() {
               <h5>Blue Version</h5>
               <p>아이다스 오리지널스,그 표현의 정점을 만나다.</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className='best_content'>
+        <h1>베스트셀러</h1>
+        <div className='best_product'>
+          <button><FaChevronLeft size={60} /></button>
+          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
+          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
+          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
+          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
+          <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Beige_FX6029_01_standard.jpg' alt='adidas' />
+          <button><FaChevronRight size={60} /></button>
+        </div>
+      </div>
+      <div className='text_content'>
+        <div className='content'>
+          <div className='text1'>
+            <h6></h6>
+            <p></p>
+          </div>
+          <div className='text2'>
+            <h6></h6>
+            <p></p>
           </div>
         </div>
       </div>

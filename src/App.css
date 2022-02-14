@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .container {
   width: 1320px;
@@ -30,15 +31,20 @@
 .content {
   background: #f2f2f2;
 }
-.cont_img {
-  height: 100%;
+.main_content {
+  display: flex;
+}
+.main_content li h3 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
 }
 .menu {
   padding: 5px 0 0 0;
-  width: 33.333%;
+  width: 100%;
 }
-.img_text {
-  /* background-color: skyblue; */
+/* .img_text {
+  background-color: skyblue;
   justify-content: space-between;
   display: flex;
 }
@@ -57,9 +63,10 @@
 }
 .img_text div:nth-child(3) {
   padding-right: 240px;
-}
+} */
 /* 신상품 */
-.new_product {
+.new_product,
+.best_content {
   padding-top: 70px;
   background: #fcfcfc;
 }
@@ -77,14 +84,17 @@
   font-size: 20px;
   font-weight: 500;
 }
-.product1 {
+.product1,
+.best_product {
   text-align: center;
 }
-.product1 button {
+.product1 button,
+.best_product button {
   background: none;
   border: none;
 }
-.product1 img {
+.product1 img,
+.best_product img {
   width: 15%;
   padding: 5px;
 }
@@ -107,4 +117,14 @@
 .cont_card h5,
 .cont_card p {
   text-align: start;
+}
+/* 베스트셀러 */
+.best_content h1 {
+  text-align: center;
+}
+/* 푸터 */
+.text_content {
+  margin-top: 100px;
+  background: #cfcfcf;
+  height: 300px;
 }
