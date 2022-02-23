@@ -1,37 +1,277 @@
 import './App.css';
 import React from 'react';
-import { FaRegUser,FaBars,FaSearch,FaShoppingBag } from "react-icons/fa"
+import { FaRegUser,FaBars,FaSearch,FaShoppingBag, FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
-function Click() {
-  console.log("hello")
-}
 
 function App() {
   return (
     <>
       <div className='header'>
-        <div className='header_bar'>
-          <FaBars size="40" />
-        </div>
-        <div>
-          <img className='header_logo' src='https://www.adidas.co.kr/glass/react/5152538/assets/img/icon-adidas-logo.svg' alt='adidas' />
-        </div>
-        <div className='header_icons'>
-          <FaRegUser size="40" className='icon' />
-          <FaSearch size="40" className='icon' />
-          <FaShoppingBag size="40" className='icon' />
+        <div className='header_cont'>
+          <div>
+            <img className='header_logo' src='https://www.adidas.co.kr/glass/react/5152538/assets/img/icon-adidas-logo.svg' alt='adidas' />
+          </div>
+          <ul>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>SPORTS</li>
+            <li>BRANDS</li>
+            <li>OUTLET</li>
+          </ul>
+          <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </ul>
         </div>
       </div>
-      <div className='content'>
-        <div className='cont_img'>
-          <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_women_dt_tcm215-636701.jpg' alt='women' className='menu' />
-          <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_men_dt_tcm215-636698.jpg' alt='men' className='menu' />
-          <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_kids_dt_tcm215-636695.jpg' alt='kid' className='menu' />
+      <div className='head_cont'>
+        <div className='mid_cont'>
+          <img src='https://img.allthatboots.com/edimg2/xP7TXc.jpg' alt='adidas' />
         </div>
-        <div className='img_text'>
-          <div onClick={Click}>WoMen</div>
-          <div>Men</div>
-          <div>KiDS</div>
+      </div>
+      <div className='head_menu'>
+        <div className='container'>
+          <ul>
+            <li>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_women_dt_tcm215-636701.jpg' alt='women' />
+              <p>WOMEN</p>
+            </li>
+            <li>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_men_dt_tcm215-636698.jpg' alt='men' />
+              <p>MEN</p>
+            </li>
+            <li>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/updated_gender_kids_dt_tcm215-636695.jpg' alt='kid' />
+              <p>KIDS</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className='new_product'>
+        <div className='container'>
+        <ul className='new_name'>
+          <li>
+            <h1>신상품</h1>
+          </li>
+          <li>
+            <Link to="/"><div>전체보기</div></Link>
+          </li>
+        </ul>
+        <ul className='product1'>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a637399ce124376b155adc500ff0339_9366/80_Brown_GW3248_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>캠퍼스 80 엑스라지</h5>
+            <p>남성 originals</p>
+            <p>new</p>
+          </li>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/e5993c61f5204454bb62adc500fd99f0_9366/80_Purple_GW3247_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>캠퍼스 80 엑스라지</h5>
+            <p>남성 originals</p>
+            <p>new</p>
+          </li>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/a059b39c93d3411c9ae9ad6500f69a2d_9366/Silver_GY1121_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>아스티어</h5>
+            <p>Women originals</p>
+          </li>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/4ad49da472664c5cba85ad7100995f72_9366/White_GV8272_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>아스티어</h5>
+            <p>Women originals</p>
+          </li>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/127bbf0361774b69aabead6400ede354_9366/White_GY1122_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>아스티어</h5>
+            <p>Women originals</p>
+          </li>
+          <li>
+            <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/0732efb5d8504d4bb73cad7c00a2a88a_9366/CAMPUS_80s_Blue_GX9405_01_standard.jpg' alt='adidas' />
+            <div className='price'>129,000 원</div>
+            <h5>CAMPUS 80s</h5>
+            <p>남성 Lifestyle</p>
+            <p>new</p>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div className='product_menu'>
+        <div className='container'>
+          <div className='content1'>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/APP_main_ADIDASAPP_TEASER_carosel_kr_202202_tcm215-851151.jpg' alt='adidas' />
+              <h5>ADIDAS APP 런칭</h5>
+              <p>아디다스 공식 앱 런칭! 지금 바로 다운로드 하고 다양한 혜택을 만나보세요.</p>
+              <Link to="#"><div>앱 다운로드 하기</div></Link>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/valentines_day_teaser-card-d_tcm215-845625.jpg' alt='adidas' />
+              <h5>Give Love Get Love</h5>
+              <p>발렌타인 컬렉션으로 사랑도 표현하고 10만원 바우처 기회도 잡으세요</p>
+              <Link to="#"><div>지금 구매하기</div></Link>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/harden6-CAROUSEL-d_tcm215-845646.jpg' alt='adidas' />
+              <h5>HARDEN VOL. 6</h5>
+              <p>제임스 하든의 행운의 HARDEN VOL 6, 지금 바로 만나 보세요</p>
+              <Link to="#"><div>지금 구매하기</div></Link>
+            </div>
+            <div className='cont_card'>
+              <img src='https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/koKR/Images/ss22-Parley-Mission-carouse-d_tcm215-851145.png' alt='adidas' />
+              <h5>ADIDAS X PARLEY</h5>
+              <p>나의 선택, 바다의 색깔을 바꾸다.</p>
+              <Link to="#"><div>지금 구매하기</div></Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='best_content'>
+        <div className='container'>
+          <h1>베스트셀러</h1>
+          <ul className='product1'>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ee7596cb94f4e429bc9abfb00ddc199_9366/FV9760_01_standard.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>오즈위고 TR W</h5>
+              <p>Originals</p>
+            </li>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/17fc867b5e4a4a489535ac6300bad9bb_9366/FY5961_01_standard.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>플루이드플로우2.0</h5>
+              <p>Sportswear</p>
+            </li>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc9a4fa8c3dc4ce0a036aaaa014778f8_9366/FI3033_01_standard.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>골드 슈즈 백</h5>
+              <p>Performance</p>
+            </li>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/86ce261639454dc99402a8030006de8a_9366/S21489_03_standard.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>솔리드 크루삭</h5>
+              <p>Originals</p>
+            </li>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/85e3b8b43f314661a942abca00920ade_9366/H32391_21_model.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>페이스 커버 3P 미디엄/라지</h5>
+              <p>Sportswear</p>
+            </li>
+            <li>
+              <img src='https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/787f10e6b4a14eaaba90abfb014b8893_9366/GQ6885_01_standard.jpg' alt='adidas' />
+              <div className='price'>129,000 원</div>
+              <h5>브레이디드 스트레치 벨트</h5>
+              <p>Performance</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className='text_content'>
+        <div className='content'>
+          <div className='text'>
+            <h6>1949년부터, 스토리와 스타일, 스포츠를 이끌다</h6>
+            <p>스포츠는 건강을 지키며, 내면을 밝혀주고, 우리를 하나로 이어줍니다. 아디다스는 스포츠를 통해 세상을 바꿀 수있다고 믿습니다. 세계무대를 빛내는 스포츠 선수에서, 평범한 사람들의 일상에 이르기까지, 우리는 최상의 테크놀로지로 최상의 퍼포먼스를 선사합니다. 러닝에서 바스켓볼, 축구, 피트니스까지. 아디다스와 함께 새로운 나의 모습을 만나보세요. 가끔은 도시를 벗어나 아웃도어를 즐기고, 요가를 통해공동체와 하나가 되어보세요. 3-스트라이프의 헤리티지는 문화로까지 이어집니다. 스포츠는 물론, 음악과 일상의 스트릿까지 말이죠. 휘슬이 울리기 직전의 출발선으로부터, 질주의 순간, 마지막 결승선까지. 아디다스는 모두를 위한 브랜드입니다. 스포츠와 당신의 삶, 그리고 세상을 바꿉니다</p>
+            <p className='last_text'>아디다스는 단순히 스포츠웨어와 운동복을 만드는 브랜드가 아닙니다. 우리는 업계를 선도하는 리더들과 파트너십을 맺고 세상에 없던 것들을 함께 창조합니다. 이를 통해 우리는 팬들이 원하는 스포츠 제품과 스타일을 제공하고 동시에 환경의 지속가능성을 지켜 나가고 있습니다. 아디다스는 크리에이터의 브랜드입니다. 게임의 판도를 바꾸고, 변화를 이끕니다. 그리고 우리는 우리가 지닌 영향력으로 세상을 어떻게 만들어 나갈지 고민합니다.</p>
+          </div>
+          <div className='text'>
+            <h6>세상의 모든 스포츠를 포용하는 브랜드</h6>
+            <p>아디다스는 모두의 스포츠 브랜드입니다. 새로움을 추구하는 크리에이터의 브랜드입니다. 관습에 도전하고, 새로운 룰을 만들며, 창조적인 파격을 거듭합니다. 우리는 단순한 스포츠 제품, 그 이상을 만듭니다. 결승선을 통과하는 그 순간까지 흔들림 없는 몰입과 의지, 승리의 정신을 추구합니다. 운동하는 여성들을 위해 브라와 타이츠를 만들며, 세상의 모든 스포츠와 모든 체형을 포용합니다. 새로움을 디자인하고, 혁신하고, 창조합니다. 그라운드에서 육상 트랙과 코트, 수영장에 이르기까지, 스포츠의 새로운 미래를 위한 실험을 반복합니다. NMD에서 파이어버드 트랙수트까지, 어제의 영감을 바탕으로 내일의 스트릿 트렌드를 생각해냅니다. 영원한 스트릿의 아이콘으로 자리 잡은 스탠 스미스와 슈퍼스타에서 볼 수 있듯이, 아디다스는 어제의 클래식에 오늘의 트렌드라는 새 생명을 불어넣는 브랜드입니다.</p>
+            <p className='last_text'>아디다스가 내놓는 컬렉션은 하이 패션과 퍼포먼스의 경계를 자유롭게 넘나듭니다. 아디다스 by 스텔라 맥카트니의 애슬레틱 컬렉션이 증명하듯 스튜디오와 스트릿 룩의 구분은 의미가 없습니다. 오리지널스의 라이프스타일 어패럴도 필요할 때면 언제든 운동복이 될 수 있습니다. 우리의 삶은 끊임없이 변화하고 있습니다. 일상의 모습도 하루가 다르게 바뀝니다. 아디다스의 디자인 철학은 이 세상의 끝없는 진화를 담고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div className='foot_banner'>
+        <div className='banner'>
+          <div className='ban_text'>
+            <h1>지금 멤버십 가입하고 10%할인 혜택 받으세요</h1>
+            <p>* 이메일 수신동의자에 한해 10% 할인쿠폰 발급</p>
+          </div>
+          <div className='ban_btn'>
+            <button>회원가입</button>
+          </div>
+        </div>
+      </div>
+      <div className='footer_content'>
+        <div className='footer_cont'>
+          <ul>
+            <li>
+              <h4>PRODUCTS</h4>
+              <p>신상품</p>
+              <p>공식 아울렛</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>SPORTS</h4>
+              <p>러닝</p>
+              <p>트레이닝</p>
+              <p>아웃도어</p>
+              <p>축구</p>
+              <p>골프</p>
+              <p>요가</p>
+              <p>테니스</p>
+              <p>농구</p>
+              <p>스케이트보딩</p>
+              <p>수영</p>
+              <p>사이클링</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>COMPANY INFO</h4>
+              <p>회사소개</p>
+              <p>채용정보</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>MEMBERSHIP</h4>
+              <p>아디클럽</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>SUPPORT</h4>
+              <p>고객센터,심외수선</p>
+              <p>주문 / 배송 조회</p>
+              <p>FAQ</p>
+              <p>구매 이용약관</p>
+            </li>
+          </ul>
+        </div>
+        <div className='foot_address'>
+          <p>아디다스코리아(유) | 서울특별시 서초구 서초대로 74길 4, 삼성생명 서초타워 23층 (06620) | 대표자: 곽근엽 | 사업자 등록번호: 214-81-07412 | 통신판매업신고: 2007-서울서초-10391 | 개인정보관리책임자: 장영태 | 호스팅서비스사업자: 아디다스코리아(유) | 고객센터: 1588-8241 | 이메일:</p>
+          <p>service@onlineshop.adidas.co.kr</p>
+        </div>
+      </div>
+      <div className='footer'>
+        <div className='foot'>
+          <ul>
+            <li> 
+              <p>대한민국</p>
+              <p>쿠키 설정</p>
+              <p>구매 이용약관</p>
+              <p>개인정보 처리방침</p>
+              <p>아디클럽 이용약관</p>
+              <p>사용자정보확인</p>
+              <p>공정거래 자율준수</p>
+              <p>채무지급보증안내</p>
+            </li>
+            <li>
+              <p className='foot_email'>ⓒ adidas Korea, LLC. All Rights Reserved</p>
+            </li>
+          </ul>
         </div>
       </div>
     </>
