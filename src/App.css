@@ -8,6 +8,24 @@
   /* background: red; */
   margin: 0 auto;
 }
+/* 헤드메뉴 */
+.header_menu {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.head_container {
+  width: 95%;
+  margin: 0 auto;
+}
+.head_container ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.head_container ul li {
+  padding: 10px 13px 0 0;
+  font-size: 14px;
+}
+/* 헤드 */
 .header {
   width: 100%;
   display: flex;
