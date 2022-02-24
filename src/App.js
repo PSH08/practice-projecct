@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { FaRegUser,FaBars,FaSearch,FaShoppingBag, FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import { FaRegUser,FaBars,FaSearch,FaShoppingBag, FaChevronLeft, FaChevronRight, FaUser, FaHeart } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 
 
@@ -21,10 +21,9 @@ function App() {
             <li>OUTLET</li>
           </ul>
           <ul>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+            <li><FaUser size={20} /></li>
+            <li><FaHeart  size={20}/></li>
+            <li><FaShoppingBag size={20} /></li>
           </ul>
         </div>
       </div>

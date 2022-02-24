@@ -28,9 +28,12 @@
   font-weight: 500;
 }
 .header_logo {
-  width: 30%;
+  width: 25%;
   padding: 10px 0 10px 0;
   display: block;
+}
+.head_font {
+  width: 100%;
 }
 /* 중앙 컨텐트 */
 .head_cont {
