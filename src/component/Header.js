@@ -1,6 +1,6 @@
 import {FaUser,FaHeart,FaShoppingBag} from "react-icons/fa"
 
-function head() {
+function HeadTop() {
   return (
     <>
       <div className='header_menu'>
@@ -15,6 +15,12 @@ function head() {
           </ul>
         </div>
       </div>
+    </>
+  )
+}
+function HeadBot() {
+  return(
+    <>
       <div className='header'>
         <div className='header_cont'>
           <div>
@@ -35,6 +41,16 @@ function head() {
           </ul>
         </div>
       </div>
+    </>
+  )
+}
+
+
+function head() {
+  return (
+    <>
+      <HeadTop />
+      <HeadBot />
     </>
   )
 }
