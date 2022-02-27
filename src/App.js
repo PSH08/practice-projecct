@@ -1,11 +1,15 @@
 import './App.css';
 import React from 'react';
-import Main from './Main';
+import Header from './component/Header'
+import Content from './component/Content'
+import Footer from './component/Footer'
 
 function App() {
   return (
     <>
-      <Main />
+    <Header />
+    <Content />
+    <Footer />
     </>
   );
 }
