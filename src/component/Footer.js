@@ -126,10 +126,10 @@ function FooterBot() {
 function footer() {
   return (
     <>
-    <FooterTop />
-    <FooterContent />
-    <FooterBanner />
-    <FooterBot />
+      <FooterTop />
+      <FooterContent />
+      <FooterBanner />
+      <FooterBot />
     </>
   )
 }
