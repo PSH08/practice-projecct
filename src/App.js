@@ -3,13 +3,15 @@ import React from 'react';
 import Header from './component/Header'
 import Content from './component/Content'
 import Footer from './component/Footer'
+import Login from './component/login';
 
 function App() {
   return (
     <>
-    <Header />
-    <Content />
-    <Footer />
+      <Login />
+      {/* <Header />
+      <Content />
+      <Footer /> */}
     </>
   );
 }
